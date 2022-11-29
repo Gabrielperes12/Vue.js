@@ -3,13 +3,11 @@
 </template>
 
 <script>
-import PrimeiroComponents from './components/PrimeiroComponents.vue'
-
-
-  export default{
+    import PrimeiroComponents from './components/PrimeiroComponents.vue'
     
-    components:{
-      PrimeiroComponents
+    export default{
+      components:{
+        PrimeiroComponents
+      }
     }
-  }
 </script>

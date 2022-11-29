@@ -1,9 +1,9 @@
 <template>
-    <h1>Olá Vue!</h1>
+    <h1>Olá VUE!</h1>
 </template>
 
 <script>
-    export default {
-        name:'PrimeiroComponents'
-    }
+    export default{
+       name:'PrimeiroComponents'
+    }    
 </script>
