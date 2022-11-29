@@ -2,21 +2,21 @@
     <div>
         <h2>Descrição da pessoa: {{nome}} </h2>
         <Info/>
-        <Form />
+        <Forme />
 
         
     </div>
 </template>
 
 <script>
-import Info from './Info.vue'
-import Form from './Form.vue';
+import Info from './Info.vue';
+import Forme from './Forme.vue';
 
     export default{
       name:'PessoA',
        components:{
         Info,
-        Form
+        Forme
        },
       
       data(){

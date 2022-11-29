@@ -24,7 +24,7 @@ import InputText from './form/InputText.vue';
 import Submit from './form/Submit.vue';
 
     export default{
-        name:'ForM',
+        name:'FormE',
         components:{
             InputText,
             Submit
