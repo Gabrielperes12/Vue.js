@@ -1,19 +1,29 @@
 <template>
   <div>
-  <PrimeiroComponents/>
-  <LifeCycle/>
-  </div>
+    <PrimeiroComponents/>
+    <LifeCycle/>
+    <Pessoa/>
+    
 
-</template>
+  </div>
+  </template>
 
 <script>
     import PrimeiroComponents from './components/PrimeiroComponents.vue'
     import LifeCycle from './components/LifeCycle.vue'
+    import Pessoa from './components/Pessoa.vue';
+
+   
     
     export default{
+      name: 'app',
       components:{
         PrimeiroComponents,
-        LifeCycle
+        LifeCycle,
+        Pessoa,
+            
+        
+        
       }
     }
 </script>
