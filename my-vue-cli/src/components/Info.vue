@@ -11,7 +11,7 @@
             <li>VUE.JS</li>
         </ul>
         <p v-show="mostar_email">email: {{email}}</p>
-        <p>para acessae meu gitghub  <a href="#"> clique aqui </a></p>
+        <p>para acessae meu gitghub  <a href="meu_link"> clique aqui </a></p>
     </div>
 </template>
 
