@@ -17,12 +17,18 @@
                 this.nome = 'Matheus'
             }, 1000  );
 
-          
+          this.lifecycle()
         },
         mounted(){
             setTimeout(() => {
                 this.nome = 'Renan'
             }, 2000);
+            this.lifecycle()
+        },
+        methods: {
+            lifecycle(){
+                console.log('execotou')
+            }
         }
     }
 </script>

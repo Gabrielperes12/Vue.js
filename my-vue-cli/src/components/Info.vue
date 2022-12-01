@@ -11,8 +11,9 @@
             <li>VUE.JS</li>
         </ul>
         <div>
-            <button @click="showEmail">Mostra e-mail</button>
+            <button @click="showEmail">{{textobotao}}</button>
         </div>
+        <p v-show="mostrar_email">gabriel@gmail.com </p>
         <p>para acessar meu github: <a :href="meu_link" target="blank">Clique aqui</a></p>
         <Picture/>
     </div>
@@ -28,17 +29,24 @@ import Picture from './form/Picture.vue';
         data() {
             return {
                 esta_trabalhando: true,
-                mostar_email: false,
-                email: 'gabriel@gmail.com',
+                mostrar_email: false,
                 meu_link: 'https://github.com/Gabrielperes12',
+                textobotao: 'Mostrar e-mail'
                
             
                 
             }
         },
-        methods:{
+        //aula 11//
+        methods: {
             showEmail(){
-               this.mostar_email = !this.mostar_email
+                this.mostrar_email = !this.mostrar_email
+                if(!this.mostrar_email){
+                    this.textobotao = 'Mostrar e-mail'
+                }else{
+                    this.textobotao = 'esconder e-mail'
+                }
+               
             }
         }
     }
