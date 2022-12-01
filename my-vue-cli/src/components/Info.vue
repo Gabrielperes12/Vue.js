@@ -10,7 +10,9 @@
             <li>JAVASCRIPT</li>
             <li>VUE.JS</li>
         </ul>
-        <p v-show="mostar_email">email: {{email}}</p>
+        <div>
+            <button @click="showEmail">Mostra e-mail</button>
+        </div>
         <p>para acessar meu github: <a :href="meu_link" target="blank">Clique aqui</a></p>
         <Picture/>
     </div>
@@ -26,7 +28,7 @@ import Picture from './form/Picture.vue';
         data() {
             return {
                 esta_trabalhando: true,
-                mostar_email: true,
+                mostar_email: false,
                 email: 'gabriel@gmail.com',
                 meu_link: 'https://github.com/Gabrielperes12',
                
@@ -34,5 +36,10 @@ import Picture from './form/Picture.vue';
                 
             }
         },
+        methods:{
+            showEmail(){
+               this.mostar_email = !this.mostar_email
+            }
+        }
     }
 </script>
