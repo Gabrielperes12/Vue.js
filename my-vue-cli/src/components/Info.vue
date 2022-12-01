@@ -11,18 +11,27 @@
             <li>VUE.JS</li>
         </ul>
         <p v-show="mostar_email">email: {{email}}</p>
-        <p>para acessae meu gitghub  <a href="meu_link"> clique aqui </a></p>
+        <p>para acessar meu github: <a :href="meu_link" target="blank">Clique aqui</a></p>
+        <Picture/>
     </div>
 </template>
 
 <script>
+import Picture from './form/Picture.vue';
+
     export default{
+     
         name: 'InfO',
+        components:{Picture},
         data() {
             return {
                 esta_trabalhando: true,
                 mostar_email: true,
-                email: 'gabriel@gmail.com'
+                email: 'gabriel@gmail.com',
+                meu_link: 'https://github.com/Gabrielperes12',
+               
+            
+                
             }
         },
     }
