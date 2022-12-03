@@ -14,7 +14,7 @@
             <button @click="showEmail">{{textobotao}}</button>
         </div>
         <p v-show="mostrar_email">gabriel@gmail.com </p>
-        <p>para acessar meu github: <a :href="meu_link" target="blank">Clique aqui</a></p>
+        <p class="tes">para acessar meu github: <a :href="meu_link" target="blank">Clique aqui</a></p>
         <Picture/>
     </div>
 </template>
@@ -38,7 +38,7 @@ import Picture from './form/Picture.vue';
             }
         },
         //aula 11//
-        methods: {
+       methods:{
             showEmail(){
                 this.mostrar_email = !this.mostrar_email
                 if(!this.mostrar_email){
@@ -46,8 +46,14 @@ import Picture from './form/Picture.vue';
                 }else{
                     this.textobotao = 'esconder e-mail'
                 }
-               
             }
-        }
+       }
     }
 </script>
+
+<style>
+.paragrafo-pai{
+    
+}
+
+</style>
