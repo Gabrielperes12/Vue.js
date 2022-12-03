@@ -20,6 +20,8 @@ ul{
     list-style: none;
     display: flex;
     background-color: black;
+    padding: 30px;
+    margin: -10px -10px -10px -10px;
 
 }
 li{
