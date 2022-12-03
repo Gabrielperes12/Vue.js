@@ -13,7 +13,7 @@
         <div>
             <button @click="showEmail">{{textobotao}}</button>
         </div>
-        <p v-show="mostrar_email">gabriel@gmail.com </p>
+        <p v-show="mostrar_email" class="email">gabriel@gmail.com </p>
         <p class="tes">para acessar meu github: <a :href="meu_link" target="blank">Clique aqui</a></p>
         <Picture/>
     </div>
@@ -51,9 +51,11 @@ import Picture from './form/Picture.vue';
     }
 </script>
 
-<style>
-.paragrafo-pai{
-    
+<style scoped>
+.email{
+    background-color: black;
+    color: red;
+    text-align: center;
 }
 
 </style>
