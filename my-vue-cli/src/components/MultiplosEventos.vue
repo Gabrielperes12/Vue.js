@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="primeiro()">Ativar Multiplos Eventos</button>
+        <button @click="(primeiro($event), segundo($event), terceiro())">Ativar Multiplos Eventos</button>
         <p>{{multiplos_eventos}}</p>
     </div>
 </template>
@@ -13,12 +13,19 @@
         },
         data(){
             return{
-                multiplos_eventos:''
+                multiplos_eventos:'',
+               
             }
         },
         methods:{
            primeiro(){
             this.multiplos_eventos = 'Primeiro evento!'
+           },
+           segundo(){
+            setTimeout(() => this.multiplos_eventos = 'Segundo evento!', 500)
+           },
+           terceiro(){
+            setTimeout(() => this.multiplos_eventos = '', 1500)
            }
         }
 
