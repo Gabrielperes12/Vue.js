@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Headeer/>
+    <Headeer :esta_logado="false"/>
     <PrimeiroComponents/>
     <LifeCycle/>
     <Pessoa/>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>{{compEmail}} </p>
+       
         <p v-if="esta_trabalhando">Estou trabalahndo no momento.</p>
         <p v-else>Estou em busca de oportunidade</p>
         
@@ -28,12 +28,14 @@ import Picture from './form/Picture.vue';
      
         name: 'InfO',
         props:{
-            compEmail: String
+            email: String,
+            esta_trabalhando: Boolean
+
         },
         components:{Picture},
         data() {
             return {
-                esta_trabalhando: true,
+                
                 mostrar_email: false,
                 meu_link: 'https://github.com/Gabrielperes12',
                 textobotao: 'Mostrar e-mail',
